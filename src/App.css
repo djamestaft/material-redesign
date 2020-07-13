@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  color: white;
+  background-color: #212121;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -25,6 +28,78 @@
 }
 
 .App-link {
+  color: #61dafb;
+}
+
+.title-area {
+  padding: 2px 20px 5px 24px;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+#title {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+#version {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.with-sidebar > * > * {
+  /* ↓ applies to both elements */
+  height: 100vh;
+}
+
+.plus-box-button {
+  border: 1px dashed rgba(255, 255, 255,.15);
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 6px;
+  margin: 8px 66px 0 0;
+}
+
+.list-nav {
+  padding: 16px 24px;
+  list-style: none;
+}
+
+.list-item {
+  font-size: 14px;
+  color: white;
+  padding-bottom: 19px;
+  font-weight: 500;
+}
+
+.diamond-sponsors {
+  font-size: 12px;;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 16px 24px;
+}
+
+.sidebar {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  background-color:#212121; /* Black */
+}
+
+.not-sidebar {
+  /* ↓ grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - 1rem);
+  background-color:#333; /* Black */
+}
+
+.-link {
   color: #61dafb;
 }
 

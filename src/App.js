@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="with-sidebar">
+      <div>
+        <div className="sidebar">
+          <div className="title-area">
+            <h3 id="title">Material-UI</h3>
+            <span id="version">v1.4.1</span>
+          </div>
+          <div className="diamond-sponsors">
+            <span>Diamond Sponsors</span>
+            <div className="plus-box-button">+</div>
+          </div>
+          <div className="navigation-menu">
+            <ul className="list-nav">
+              <li className="list-item">Getting Started</li>
+              <li className="list-item">Components</li>
+              <li className="list-item">Component API</li>
+              <li className="list-item">Styles</li>
+              <li className="list-item">System</li>
+              <li className="list-item">Customization</li>
+              <li className="list-item">Guides</li>
+              <li className="list-item">Premium Themes</li>
+              <li className="list-item">Discover More</li>
+              <li className="list-item">Versions</li>
+              <li className="list-item">Blog</li>
+            </ul>
+          </div>
+        </div>
+        <div className="not-sidebar">Not Sidebar</div>
+      </div>
     </div>
   );
 }
