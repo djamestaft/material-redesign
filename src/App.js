@@ -30,7 +30,19 @@ function App() {
             </ul>
           </div>
         </div>
-        <div className="not-sidebar">Not Sidebar</div>
+        <div className="not-sidebar">
+          <div className="top-nav">
+            <div>
+              search
+            </div>
+            <div>
+              language
+            </div>
+            <div>
+              icons
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

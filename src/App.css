@@ -59,10 +59,18 @@
   height: 100vh;
 }
 
+.top-nav {
+  height: 64px;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .plus-box-button {
   border: 1px dashed rgba(255, 255, 255,.15);
   text-align: center;
-  padding: 15px 0;
+  padding: 12px 0;
   border-radius: 6px;
   margin: 8px 66px 0 0;
 }
@@ -89,6 +97,7 @@
   flex-basis: 15rem;
   flex-grow: 1;
   background-color:#212121; /* Black */
+  border-right: 1px solid rgba(255, 255, 255,.15);
 }
 
 .not-sidebar {
@@ -96,7 +105,7 @@
   flex-basis: 0;
   flex-grow: 999;
   min-width: calc(50% - 1rem);
-  background-color:#333; /* Black */
+  background-color: #212121;
 }
 
 .-link {
