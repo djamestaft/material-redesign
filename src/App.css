@@ -27,6 +27,16 @@
   color: white;
 }
 
+.nav-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-container {
+  margin-right: 40px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -64,7 +74,9 @@
   background-color: rgb(51, 51, 51);
   color: white;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.25);
 }
 
 .plus-box-button {
@@ -81,7 +93,7 @@
 }
 
 .list-item {
-  font-size: 14px;
+  font-size: 13px;
   color: white;
   padding-bottom: 19px;
   font-weight: 500;
