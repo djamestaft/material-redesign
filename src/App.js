@@ -2,10 +2,8 @@ import React from 'react';
 import './App.css';
 import { TextField } from '@material-ui/core';
 import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
-import { withStyles } from '@material-ui/core';
-import Icon from '@material-ui/core/Icon';
+import { withStyles, Select, MenuItem } from '@material-ui/core';
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 const StyledText = withStyles({
@@ -24,6 +22,30 @@ const StyledText = withStyles({
     color: 'white'
   }
 })(TextField);
+
+const StyledSelect = withStyles({
+  root: {
+    background: '#656565',
+    borderRadius: 4,
+    color: 'white',
+    height: '37px',
+    padding: '0 30px 0 10px',
+    maxWidth: '120px',
+    display: 'flex',
+    alignItems: 'center',
+    border: 'none !important'
+  },
+  select: {
+    fontSize: '12px',
+    borderRadius: 2
+  },
+  selectIcon: {
+    color: 'white'
+  },
+  placeholder: {
+    color: 'white'
+  }
+})(Select);
 
 function App() {
   return (
@@ -72,15 +94,17 @@ function App() {
               />
             </div>
             <div>
-              language
+                <StyledSelect disableUnderline={true} labelId="label" id="select" value="20">
+                  <MenuItem value="10">Ten</MenuItem>
+                  <MenuItem value="20">Twenty</MenuItem>
+              </StyledSelect>
             </div>
             <div className="nav-icons">
-              <AccessAlarm />
+              <ThreeDRotation />
               <ThreeDRotation />
               <AccessAlarm />
               <ThreeDRotation />
               <SearchIcon style={{ color: 'white' }}/>
-              
             </div>
           </div>
         </div>
