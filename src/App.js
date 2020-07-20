@@ -9,6 +9,8 @@ import InvertColorsIcon from '@material-ui/icons/InvertColors';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 import AddIcon from '@material-ui/icons/Add';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import TranslateIcon from '@material-ui/icons/Translate';
 
 const styles = {
   'input': {
@@ -21,7 +23,10 @@ const styles = {
       width: '300px',
       color: 'white'
     }
-  }
+  },
+  icon: {
+    fill: 'white',
+},
 };
 
 const StyledText = withStyles({
@@ -44,7 +49,7 @@ const StyledText = withStyles({
 
 const StyledSelect = withStyles({
   root: {
-    background: '#656565',
+    background: 'rgb(51, 51, 51)',
     borderRadius: 4,
     color: 'white',
     height: '37px',
@@ -55,8 +60,10 @@ const StyledSelect = withStyles({
     border: 'none !important'
   },
   select: {
-    fontSize: '12px',
-    borderRadius: 2
+    fontSize: '14px',
+    borderRadius: 2,
+    fontWeight: '500',
+    letterSpacing: '0.5px'
   },
   selectIcon: {
     color: 'white'
@@ -100,7 +107,6 @@ function App(props) {
             <div className="search-container">
               <StyledText 
                 placeholder="Search..."
-                style={{color: 'white'}}
                 InputProps={{
                   classes: {input: props.classes['input']},
                   disableUnderline: true,
@@ -115,9 +121,17 @@ function App(props) {
               />
             </div>
             <div>
-                <StyledSelect disableUnderline={true} labelId="label" id="select" value="20">
+                <TranslateIcon/>
+                <StyledSelect 
+                  inputProps={{classes: {icon: props.classes.icon}}} 
+                  disableUnderline={true} 
+                  labelId="label" 
+                  id="select" 
+                  value="20" 
+                  IconComponent={KeyboardArrowDownIcon}
+                >
                   <MenuItem value="10">Ten</MenuItem>
-                  <MenuItem value="20">Twenty</MenuItem>
+                  <MenuItem value="20">LANGUAGE</MenuItem>
               </StyledSelect>
             </div>
             <div className="nav-icons">
