@@ -4,7 +4,10 @@ import { TextField } from '@material-ui/core';
 import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import { withStyles, Select, MenuItem } from '@material-ui/core';
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import InvertColorsIcon from '@material-ui/icons/InvertColors';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import Brightness7Icon from '@material-ui/icons/Brightness7';
 
 const StyledText = withStyles({
   root: {
@@ -100,11 +103,10 @@ function App() {
               </StyledSelect>
             </div>
             <div className="nav-icons">
-              <ThreeDRotation />
-              <ThreeDRotation />
-              <AccessAlarm />
-              <ThreeDRotation />
-              <SearchIcon style={{ color: 'white' }}/>
+              <NotificationsIcon className="icon"/>
+              <InvertColorsIcon className="icon"/>
+              <GitHubIcon className="icon"/>
+              <Brightness7Icon className="icon"/>
             </div>
           </div>
         </div>

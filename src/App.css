@@ -33,6 +33,15 @@
   justify-content: space-evenly;
 }
 
+.icon {
+  padding: 12px;
+  border-radius: 50%;  
+}
+
+.icon:hover {
+  background-color: lightgray;
+}
+
 .search-container {
   margin-right: 40px;
   color: white;
@@ -98,6 +107,13 @@
   color: white;
   padding-bottom: 19px;
   font-weight: 500;
+}
+
+.list-item:hover {
+  font-size: 14px;
+  color: #3c8cc7;
+  cursor: pointer;
+
 }
 
 .diamond-sponsors {
