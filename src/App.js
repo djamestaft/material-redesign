@@ -8,6 +8,21 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InvertColorsIcon from '@material-ui/icons/InvertColors';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
+import AddIcon from '@material-ui/icons/Add';
+
+const styles = {
+  'input': {
+    color: 'white',
+    '&::placeholder': {
+      textOverflow: 'ellipsis !important',
+      color: 'white'
+    },
+    '&::focus': {
+      width: '300px',
+      color: 'white'
+    }
+  }
+};
 
 const StyledText = withStyles({
   root: {
@@ -20,10 +35,11 @@ const StyledText = withStyles({
   },
   label: {
     textTransform: 'capitalize',
+    color: 'white',
   },
-  placeholder: {
-    color: 'white'
-  }
+  '&::placeholder': {
+    color: 'white',
+  },  
 })(TextField);
 
 const StyledSelect = withStyles({
@@ -50,7 +66,7 @@ const StyledSelect = withStyles({
   }
 })(Select);
 
-function App() {
+function App(props) {
   return (
     <div className="with-sidebar">
       <div>
@@ -61,7 +77,7 @@ function App() {
           </div>
           <div className="diamond-sponsors">
             <span>Diamond Sponsors</span>
-            <div className="plus-box-button">+</div>
+            <div className="plus-box-button"><AddIcon /></div>
           </div>
           <div className="navigation-menu">
             <ul className="list-nav">
@@ -84,7 +100,9 @@ function App() {
             <div className="search-container">
               <StyledText 
                 placeholder="Search..."
+                style={{color: 'white'}}
                 InputProps={{
+                  classes: {input: props.classes['input']},
                   disableUnderline: true,
                   startAdornment: (
                     <IconButton 
@@ -115,4 +133,4 @@ function App() {
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
