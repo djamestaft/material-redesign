@@ -27,6 +27,11 @@
   color: white;
 }
 
+.language-select {
+  display: flex;
+  align-items: center;
+}
+
 .nav-icons {
   width: 200px;
   display: flex;

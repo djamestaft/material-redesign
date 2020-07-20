@@ -120,7 +120,7 @@ function App(props) {
                 }}
               />
             </div>
-            <div>
+            <div className="language-select">
                 <TranslateIcon/>
                 <StyledSelect 
                   inputProps={{classes: {icon: props.classes.icon}}} 
