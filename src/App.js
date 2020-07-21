@@ -84,7 +84,7 @@ function App(props) {
           </div>
           <div className="diamond-sponsors">
             <span>Diamond Sponsors</span>
-            <div className="plus-box-button"><AddIcon /></div>
+            <div className="plus-box-button"><AddIcon color="transparent"/></div>
           </div>
           <div className="navigation-menu">
             <ul className="list-nav">
@@ -95,10 +95,10 @@ function App(props) {
               <li className="list-item">System</li>
               <li className="list-item">Customization</li>
               <li className="list-item">Guides</li>
-              <li className="list-item">Premium Themes</li>
+              <li className="list-item" style={{color: '#90caf9'}}>Premium Themes</li>
               <li className="list-item">Discover More</li>
               <li className="list-item">Versions</li>
-              <li className="list-item">Blog</li>
+              <li className="list-item" style={{color: '#90caf9'}}>Blog</li>
             </ul>
           </div>
         </div>

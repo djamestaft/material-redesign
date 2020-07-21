@@ -97,26 +97,34 @@
 .plus-box-button {
   border: 1px dashed rgba(255, 255, 255,.15);
   text-align: center;
-  padding: 12px 0;
+  padding: 5px 30px;
   border-radius: 6px;
   margin: 8px 66px 0 0;
 }
 
+.plus-box-button:hover {
+  border: 1px dashed white;
+}
+
 .list-nav {
-  padding: 16px 24px;
   list-style: none;
 }
 
 .list-item {
   font-size: 13px;
   color: white;
-  padding-bottom: 19px;
   font-weight: 500;
+  padding-left: 27px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+ul {
+  padding: 0
 }
 
 .list-item:hover {
-  font-size: 14px;
-  color: #3c8cc7;
+  background-color: rgba(255, 255, 255, 0.08);
   cursor: pointer;
 
 }
